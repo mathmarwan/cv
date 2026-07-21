@@ -14,10 +14,12 @@
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % adjust the page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.86]{geometry}
 \setlength{\footskip}{6.00005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\photo[80pt][0.6pt]{profile_pic_linkedin}
 
 % font loading
 % for luatex and xetex, do not use inputenc and fontenc
@@ -43,14 +45,16 @@
 
 % personal data
 \name{Marwan}{Benyoussef}
-\title{PhD in Mathematics  \& Software Engineer}                               % optional, remove / comment the line if not wanted
+\title{PhD in Mathematics  \& Data/AI Engineer}                               % optional, remove / comment the line if not wanted
 %\born{19 Sept 1983}                                 % optional, remove / comment the line if not wanted
-\address{Wasgenstr. 75, Haus 25}{14129, Berlin}{Germany}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+33 767813990}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\address{16 rue Verte}{91380, Chilly-Mazarin}{France}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+212 672491005}  
+\phone[mobile]{+33 767813990}   
+% optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
 %\phone[fax]{+3~(456)~789~012}
 \email{marwan.benyoussef@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{https://mathmarwan.github.io/}                         % optional, remove / comment the line if not wanted
+\homepage{mathmarwan.github.io/}                         % optional, remove / comment the line if not wanted
 
 % Social icons
 %\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
@@ -104,14 +108,19 @@
 
 
 \section{Teaching Experience}
-My teaching duties in Algebraic Geometry range from designing the class content, grading the assignments and exams,  choosing the right problems to illustrate the mathematical concepts, to 
+My teaching duties in Algebraic Geometry and Computer Security range from designing the class content, grading the assignments and exams,  choosing the right problems to illustrate the mathematical concepts, to 
 giving background and motivating lectures to the some central topics in algebraic geometry like scheme theory and moduli spaces. Moreover, I am motivated to guide my students through the process of choosing their preferred future research area. For computer science teaching duties, I am also responsible for teaching my students how to use the software (C, C++, Maple, Sage, GAP, LaTeX) and how to conceive efficient algorithms and follow the best design paradigms.
 
 \section{Education}
-\cventry{2020-2025}{PhD in Algebraic Geometry, with honours }{Freie Universit\"{a}t Berlin}{}{{Berlin,}{\textit{Germany}}{}}{}
-\cventry{2018-2020}{Master of Science in Mathematics, with honours}{Sorbonne University}{}{\textit{{}{\textit{Paris (with one semester exchange at University of Montreal)}}{}}}{}
+\cventry{2020-2025}{PhD in Algebraic Geometry, with distinction (Very Good) }{Freie Universit\"{a}t Berlin}{}{{Berlin,}{\textit{Germany}}{}}{}
+\cventry{2018-2020}{Master of Science in Mathematics, with honors}{Sorbonne University}{}{\textit{{}{\textit{Paris (with one semester exchange at University of Montreal)}}{}}}{}
 \cventry{2018}{Bachelor of Science in Mathematics, with honors}{Sorbonne University}{Paris}{\textit{{}{\textit{France}}{}}}{}
-\cventry{2007}{Embedded Systems Engineer}{Ecole des Mines de Saint-Etienne}{Saint-Etienne}{\textit{France}}{}  % arguments 3 to 6 can be left empty
+\cventry{2007}{Embedded Systems Engineer}{Ecole des Mines de Saint-Etienne}{Saint-Etienne}{\textit{France}}{} 
+\cventry{2001-2003}{Preparatory Classes for National Graduate Engineering Schools, Major in Mathematics and Physics}{Lycee Hassan II}{Rabat}{\textit{{}{\textit{Morocco}}{}}}{}
+
+
+\cventry{2001}{Baccalaureat, Major in math, with honors}{Lycee Hassan II}{Rabat}{\textit{{}{\textit{Morocco}}{}}}{}
+% arguments 3 to 6 can be left empty
 
 
 \section{Languages}
@@ -218,6 +227,14 @@ giving background and motivating lectures to the some central topics in algebrai
 %	fiber over zero coincides with the Hitchin morphism.}
 
 \section{Experience}
+\subsection{Software Engineering, Data/IA}
+\cventry{2025--Present}{Data Ops}{Data/AI Team}{Ligue Nationale Contre le Cancer}{}{
+	Responsible for maintaining data pipelines, ensuring data quality, and optimizing data infrastructure.
+}
+\cventry{Sep 2006 -- Dec 2016}{Software Engineer}{}{Nice, Paris, Montreal and Santiago areas.}{}{
+	Design of distributed concurrent computing systems for various industries including air traffic control,
+	telecommunications and global distribution systems in soft/hard real-time environments.
+}
 \subsection{Teaching assistant in Mathematics}
 \cventry{Oct 2023 -- Present}{Algebra I (Graduate Level)}{Complex Analysis Department}{FU Berlin }{}{
 	Conducting central exercise classes for the Algebra I module, covering concepts such as affine algebraic varieties, rings, ideals and modules, noetherian rings, local rings and localization, primary decomposition, finite and integral extensions, dimension theory, and regular rings.
@@ -252,14 +269,14 @@ giving background and motivating lectures to the some central topics in algebrai
 }
 
 
-\subsection{Teaching assistant in Computer Science and Cybersecurity}
-\cventry{Mar 2023 -- Sep 2023}{Cybersecurity Exercise Class (Graduate Level)}{Computer Science Department}{FU Berlin }{}{Conducted exercise class for Cybersecurity module, including the following concepts: authentication mechanisms, security models (Access Control Matrix Model, the Take-Grant Protection Model, the Bell-LaPadula and related models, the Chinese Wall Model, the Lattice Model of Information Flow), capability based systems and hardware protection mechanism concepts (protection rings). The course included also implementation vulnerabilities such as race conditions, stack and heap overflows, integer overflows, and return oriented programming.
+\subsection{Teaching assistant in Computer Science}
+\cventry{Mar 2023 -- Sep 2023}{Computer Security Exercise Class (Graduate Level)}{Computer Science Department}{FU Berlin }{}{Conducted exercise class for Computer Security module, including the following concepts: authentication mechanisms, security models (Access Control Matrix Model, the Take-Grant Protection Model, the Bell-LaPadula and related models, the Chinese Wall Model, the Lattice Model of Information Flow), capability based systems and hardware protection mechanism concepts (protection rings). The course included also implementation vulnerabilities such as race conditions, stack and heap overflows, integer overflows, and return oriented programming.
 	Problems that arise when humans interface with security e.g., password habits and password entry mechanisms, human responses to security prompts, incentives and distractors for better security, or reverse Turing tests.
 }
 
 \cventry{Sep 2017 -- Mar 2018}{Part-time Lecturer (Undergraduate Level)}{Mathematics and Computer Science Department}{Paris-Sud University}{}{Taught C++ and Object-Oriented Development and conducted lectures on algorithms and optimization.
 }
-
+\newpage
 \section{(Co-)organized seminars}
 \subsection{Undergraduate Seminars}
 	\cventry{Oct 2022 -- Mar 2023}{Proseminar on \enquote{Proofs from THE BOOK}}{Complex Analysis Department}{FU Berlin}{}{
@@ -356,23 +373,37 @@ The talks delivered the following topics.
 
 \section{PhD Thesis}
 
-\cvitem
-{Title}
-{\href{https://refubium.fu-berlin.de/handle/fub188/49206}{\emph{Character Varieties for Seifert Groups and Higgs Bundles over Orbifolds}}}
+\cvitem{Title}{\href{https://refubium.fu-berlin.de/handle/fub188/49206}{\emph{Character Varieties for Seifert Groups and Higgs Bundles over Orbifolds}}}
 
-\cvitem
-{Institution}
-{Freie Universität Berlin}
+\cvitem{Advisors}{
+	\begin{tabular}{l}
+		\textbf{Prof. Dr. Alexander Schmitt}\\
+		\href{mailto:alexander.schmitt@fu-berlin.de}{alexander.schmitt@fu-berlin.de}\\[0.4em]
+		\textbf{Prof. Florent Schaffhauser}\\
+		\href{mailto:fschaffhauser@mathi.uni-heidelberg.de}{fschaffhauser@mathi.uni-heidelberg.de}
+	\end{tabular}
+}
 
-%\cvitem
-%{Advisor}
-%{Prof. Dr. Alexander Schmitt}
+\cvitem{Status}{Defended June 24, 2025; distinction: ``Very Good''}
+     
+\section{Preprints}
 
-\cvitem
-{Status}
-{Defended in June 24, 2025}
-                   
+\cvitem{2025}{Algebraic Geometry}
+\cvitem{}{On the topology of moduli spaces of rank $2$ Higgs $V$-bundles over orbifolds}
+\cvitem{2026}{Deep learning - Topological Data Analysis}
+\cvitem{}{Desingularizing Breast Cancer Classification: a Multimodal TDA approach}  
+\cvitem{2026}{Algebraic Geometry}
+\cvitem{}{Vertical Higgs bundles on elliptic surfaces and non-reduced spectral curves}
+
+
+\section{Scholarships and awards}
+\cvitem{2003}{An Award of Merit from the French government for continuing my studies at the "Ecole Nationale Sup\'{e}rieure des Mines de Saint Etienne". This scholarship is awarded based on the results and ranking in engineering schools entrance exams.}
+              
+\cvitem{2015}{80k US dollar equity free investment from the Chilean Government to join Start-Up Chile accelerator in Santiago.}
+              
 \end{document}
+
+
 
 
 %% end of file `template.tex'.
